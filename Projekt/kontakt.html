@@ -8,7 +8,7 @@
                 background-image: url('background.png');
                 background-size: cover;
                 background-repeat: no-repeat;
-                height: 100%
+                height: 100%;
             }
             header{
                 background-color: antiquewhite;
@@ -32,21 +32,26 @@
             </header>        
             <h1>Kontakt</h1>
 
-            <form action="mailto:nicolas.landtwing@hotmail.com" method="get">
-                <label for="fname">Vorname:</label>
-                <input type="text" id="fname" name="fname" required><br><br>
-                <label for="lname">Nachname:</label>
-                <input type="text" id="lname" name="lname" required><br><br>
-                <label for="lname">E-Mail:</label>
-                <input type="text" name="E-Mail" placeholder="Mail-Adresse"><br><br>
-                <label for="message">Betreff</label>
-                <input type="text" name="subject" placeholder="Betreff" required><br><br>
-                <label for="message">Nachricht</label><br><br>
-                <textarea name="body" id="" cols="30" rows="10"></textarea><br><br>
-                <input type="submit" value="Senden">
-                </form>
-                <br>
-                <br>
+            <form action="https://getform.io/f/84c1ad22-ae64-4eb6-9221-01a19b488473" method="POST">
+                <input type="text" name="name">
+                <input type="email" name="email">
+                <input type="text" name="message">
+                <!-- add hidden Honeypot input to prevent spams -->
+                <input type="hidden" name="_gotcha" style="display:none !important">
+                <!-- checkbox handle -->
+                <input type="checkbox" name="subscribe" value="yes" checked>
+                <input type="hidden" name="subscribe" value="no">
+                <!-- radio button handle -->
+                <input type="radio" name="gender" value="male" checked>
+                <input type="radio" name="gender" value="female">
+                <input type="radio" name="gender" value="other">
+                <!-- select field handle -->
+                <select name="work-experience">
+                    <option value="one-year">0-1 years</option>
+                    <option value="one-five-years">1-5 years</option>
+                </select>
+                <button type="submit">Send</button>
+            </form>
                 
          <footer>
                 Edi Hofmann,  Eli Hunziker, Laura Hunziker <br>
