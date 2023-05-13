@@ -1,0 +1,53 @@
+html,body{
+    min-height: 100%;
+}
+body{
+    background-color: blanchedalmond;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px;
+}
+/*header{
+    background-color: darkgrey;
+    padding: 2rem;
+    border: 2px solid ;
+    height: 90px;
+    position: sticky;
+    width: 100%;
+}*/
+
+nav{
+  width:fit-content;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+nav  li {
+    float: left;
+  }
+  
+nav  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+  }
+  
+nav li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+footer{
+    background-color: darkgrey;
+    padding: 2rem;
+    border: 2px solid ;
+    height: auto;
+    width: auto;
+  }

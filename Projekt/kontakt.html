@@ -2,37 +2,24 @@
     <html lang="de">
         <head>
             <title>1ps.ch</title>
+            <link rel="icon" type="image/x-icon" href="/Projekt/images/favicon.png">
             <meta charset="utf-8">
-            <style>
-            body,html{
-                min-height: 100%;
-            }
-            body {
-                background-image: url('background.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-
-            }
-            header{
-                background-color: antiquewhite;
-                padding: 2rem;
-                border: 2px solid black;
-            }
-            a {
-                text-decoration: none;
-                border: 0.2px solid #000;
-                color: #000;
-                background: #e6e4e4;
-                padding: 5px;
-                border-radius: 1px;
-      }
-            </style>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="mystyles.css">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         </head>
         <body>
             <header>
-                Navigation  
-                <a href="kontakt.html">Kontakt</a>
-            </header>        
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="wir.html">Wir</a></li>
+                        <li><a href="angebot.html">Angebot</a></li>
+                        <li><a href="pferde.html">Pferde</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+            </header>   
             <h1>Kontakt</h1>
 
             <form action="https://getform.io/f/84c1ad22-ae64-4eb6-9221-01a19b488473" method="POST">
@@ -55,18 +42,33 @@
                 </select>
                 <button type="submit">Send</button>
             </form>
+            <br>
+            <br>
+            <br>
                 
-         <footer>
-                Edi Hofmann,  Eli Hunziker, Laura Hunziker <br>
-                Reit- und Pensionsstall Feldmatte <br> 
-                5726 Unterkulm <br><br>
-                
-                E-Mail: info@1ps.ch <br><br>
-                
-                Telefon:<br>
-                Edi 079/351 82 02 <br>
-                Eli: 076/414 82 02 <br>
-                Laura: 079/864 60 82 <br>
-            </footer>    
+            <footer>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            <b>Edi Hofmann,  Eli Hunziker, Laura Hunziker</b><br><br>
+                            Reit- und Pensionsstall Feldmatte <br>
+                            5726 Unterkulm<br><br>
+                            E-Mail: info@1ps.ch<br><br>
+                            Tel: Edi 079/351 82 02<br>
+                            Eli 076/414 82 02<br>
+                            Laura 079/864 60 82<br>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="float-end">
+                            <picture>
+                                <source media="(min-width:300)"srcset="/Projekt/images/logo_transparent.png">
+                                <source media="(min-width:300)"srcset="/Projekt/images/logo_transparent.png">
+                                <img src="/Projekt/images/logo_transparent.png"alt="Logo"style="width: 300px;"></imgsrc>
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+        </footer>      
         </body>
     </html>
