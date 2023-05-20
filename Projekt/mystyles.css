@@ -186,7 +186,6 @@ ul{
   
   nav ul{
       overflow: hidden;
-      background-color: #333;
   }
     
   nav  li {
@@ -202,7 +201,7 @@ ul{
     }
     
   nav li a:hover:not(.active) {
-      background-color: grey;
+      background-color: white;
     }
   
   footer{
