@@ -1,8 +1,11 @@
 <!--
 
 tbc:
-https://cssgradient.io/ -> background: linear-gradient(red,green,orange)
-grid-view importieren
+- https://cssgradient.io/ -> background: linear-gradient(red,green,orange)
+- grid-view importieren
+- pixel for tablet / phones /desktop
+- style elemente in css
+- logo to the right
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -37,45 +40,39 @@ grid-view importieren
                 <li><a href="pferde.html">Pferde</a></li>
                  <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-        </nav>
+        </nav>       
     </header>
 
     <div class="container-fluid dark">
                    
-        <div class="text-center"> 
-            <div class="row mb-5"></div>
-            <div class="row mb-5">  
+        <div class="text-center">
+            <div class="row mb-5" id="top">  
                  <h1>REIT- UND PENSIONSSTALL FELDMATTE UNTERKULM</h1>
                  <h4>Wir sind ein kleiner Reit- und Pensionsstall in Unterkulm.</h4>
 
+                 <img src="/Projekt/images/Welcome_pic.png" alt="Willkommensbild" class="responsive">
                 
               </div>
          </div>
   </div>
 
-    <footer>
-        <div class="row">
-            <div class="col">
-                <p>
-                    <b>Edi Hofmann,  Eli Hunziker, Laura Hunziker</b><br><br>
-                    Reit- und Pensionsstall Feldmatte <br>
-                    5726 Unterkulm<br><br>
-                    E-Mail: info@1ps.ch<br><br>
-                    Tel: Edi 079/351 82 02<br>
-                    Eli 076/414 82 02<br>
-                    Laura 079/864 60 82<br>
-                </p>
-            </div>
-            <div class="col">
-                <div class="float-end">
-                    <picture>
-                        <source media="(min-width:300)"srcset="/Projekt/images/logo_transparent.png">
-                        <source media="(min-width:300)"srcset="/Projekt/images/logo_transparent.png">
-                        <img src="/Projekt/images/logo_transparent.png"alt="Logo"style="width: 300px;"></imgsrc>
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </footer>    
+  <footer>
+    <div class="box">
+        <p >
+            <b>Edi Hofmann,  Eli Hunziker, Laura Hunziker</b><br><br>
+            Reit- und Pensionsstall Feldmatte <br>
+            5726 Unterkulm<br><br>
+            E-Mail: info@1ps.ch<br><br>
+            Tel: Edi 079/351 82 02<br>
+            Eli 076/414 82 02<br>
+            Laura 079/864 60 82<br>
+        </p>
+     </div>
+    <div class="box" id="footerpic">
+        <picture>
+            <img src="/Projekt/images/logo_transparent.png"alt="Logo" class="responsivefooter">
+        </picture>
+    </div>
+</footer>    
 </body>
 </html>

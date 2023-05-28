@@ -7,16 +7,16 @@
     --grey: #85888C;
 }
 
-/* Reset */
+/* Default */
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     background-color:antiquewhite;
     font-family: "Poppins", sans-serif;
+    padding: 30px;
 }
 
 a{
@@ -25,6 +25,39 @@ a{
 
 ul{
     list-style: none;
+}
+
+#top{
+    margin-top: 30px;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
+
+.responsivefooter {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+footer{
+    background-color: darkgrey;
+    border: 2px solid ;
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    display:grid;
+}
+
+  footer .box{
+    padding:10px;
+}
+
+  .picright{
+    text-align: right;
 }
 
 /* Header */
@@ -38,16 +71,14 @@ ul{
 
 /* Logo */
 .logo{
-    display: inline-block;
     color: var(--white);
     font-size: 60px;
     margin-left: 10px;
-
 }
 
 /* Nav menu */
 .nav{
-    width: 100%;
+    width: 350px;
     height: 100%;
     position: fixed;
     background-color: var(--black);
@@ -74,8 +105,9 @@ ul{
 /* Menu Icon */
 
 .hamb{
+    display:flex;
     cursor: pointer;
-    float: right;
+    float: left;
     padding: 40px 20px;
 }
 
@@ -134,26 +166,54 @@ ul{
     top:0;
 }
 
+/* Tablet Responsivneness */
 
+@media (min-width:768px){
+    footer{
+        grid-template-columns:360px 1fr;
+        grid-template-rows: 40px 1fr 40px;
+    }
+    #footerpic{
+        grid-column-start:2;
+        grid-row-start:2;
+        text-align: right;
+    }
+    /* Logo */
+.logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 10px;
 
-
-
-
-
-
-
-
-
-
+}
+}
 
 
 
 /* Desktop Responsiveness */
 
-@media (min-width: 828px) {
-  body{
+@media (min-width: 1200px) {
+    body{
     margin:120px;
-  }
+    }
+    
+    footer{
+        grid-template-columns:360px 1fr;
+        grid-template-rows: 40px 1fr 40px;
+    }
+
+    #footerpic{
+        grid-column-start:2;
+        grid-row-start:2;
+        text-align: right;
+    }
+
+    .responsive {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
     .nav{
         max-height: none;
         top: 0;
@@ -202,14 +262,5 @@ ul{
     
   nav li a:hover:not(.active) {
       background-color: white;
-    }
-  
-  footer{
-      background-color: darkgrey;
-      padding: 2rem;
-      border: 2px solid ;
-      height: auto;
-      width: auto;
-      margin-top: 30px;
     }
 }
