@@ -1,0 +1,96 @@
+/* General setup */
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");*/
+/*@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');*/
+* {
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
+  }
+
+  @font-face {
+    font-family: PTSerif;
+    src: url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+  }
+
+  body {
+    font-family: 'PTSerif', serif;
+    font-size:10px;
+    line-height:1rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+
+  section {
+    text-indent: 20px;
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    font-size: 1rem;
+    padding: 20px;
+    
+  }
+
+  h1, h2, h3{
+    letter-spacing: 2px;
+  }
+  
+  /* header and footer */
+  header{
+    text-align: center;;
+  }
+
+  header, footer {
+    font-size:1rem;
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  a:link{
+    color:blue;
+  }
+  a:visited{
+    color:red;
+  } 
+  
+  a:hover{
+    color:chartreuse;
+    text-decoration: none;
+  }
+
+  a:active{
+    font-size:20px;
+  }
+
+  a.external{
+    background: url(external-link-52.png) center right no-repeat;
+  }
+
+  a{
+    outline: none;
+  }

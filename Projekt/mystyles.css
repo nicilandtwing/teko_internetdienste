@@ -33,7 +33,7 @@ ul{
 
 .responsive {
     width: 100%;
-    max-width: 900px;
+    max-width: 600px;
     height: auto;
   }
 
@@ -60,6 +60,17 @@ footer{
     text-align: right;
 }
 
+.wrapper{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:10px;
+}
+
+.wrapper .box{
+    padding: 20px;
+    border: 1px solid #000;
+}
+
 /* Header */
 .header{
     background-color: var(--black);
@@ -80,7 +91,7 @@ footer{
 .nav{
     width: 350px;
     height: 100%;
-    position: fixed;
+    position:fixed;
     background-color: var(--black);
     overflow: hidden;
     
@@ -95,6 +106,7 @@ footer{
 
 .menu a:hover{
     background-color: var(--grey);
+    width: 350px;
 }
 
 .nav{
@@ -229,8 +241,7 @@ footer{
     }
 
     .menu a:hover{
-        background-color: transparent;
-        color: var(--grey);
+        width: auto;
         
     }
     
@@ -261,6 +272,6 @@ footer{
     }
     
   nav li a:hover:not(.active) {
-      background-color: white;
+      background-color: var(--grey);
     }
 }
