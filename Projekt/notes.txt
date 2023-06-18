@@ -1,0 +1,17 @@
+Quellen:
+
+Tabelle:
+https://www.w3schools.com/css/css_table.asp
+
+Hamb-Menü:
+https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
+
+Gallerie:
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+
+Social Media:
+https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+
+Google Maps:
+https://blog.hubspot.com/website/how-to-embed-google-map-in-html
