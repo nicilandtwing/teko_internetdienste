@@ -21,7 +21,7 @@
 body{
     background-color:var(--beige);
     font-family: "Poppins", sans-serif;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 a{
@@ -37,10 +37,10 @@ h1,h2{
 }
 
 h1{
-    font-size:35px;
+    font-size:30px;
 }
 h2{
-    font-size: 22px;
+    font-size: 17px;
 }
 /*------------------------------------------------------------*/
 /* Grid-Settings */
@@ -136,11 +136,11 @@ footer .box{
 /* Nav menu */
 .nav{
     width: 350px;
-    height: 100%;
+    height: calc(100vh - 90px);
     position:fixed;
     background-color: var(--black);
-    overflow: hidden;
-    
+    overflow-y: scroll;
+    top:90px;
 }
 
 .menu a{
@@ -204,7 +204,6 @@ footer .box{
 }
 
 /* Toggle menu icon */
-
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
@@ -330,7 +329,7 @@ footer .box{
 /*------------------------------------------------------------*/
 /* Responsive Google Maps */
 /*------------------------------------------------------------*/
-iframe{
+.responsivemap{
     width: 100%;
 }
 
@@ -361,7 +360,7 @@ iframe{
     background: #125688;
     color: white;
   }
-  
+
 /*------------------------------------------------------------*/
 /*------------------------------------------------------------*/
 /* Tablet Responsivneness */
@@ -369,7 +368,31 @@ iframe{
 /*------------------------------------------------------------*/
 
 @media (min-width:768px){
-    /* Logo */
+/*------------------------------------------------------------*/
+/* Default Settings */
+/*------------------------------------------------------------*/
+    body{
+        font-size: 17px;
+    }
+
+    h1{
+        font-size:35px;
+    }
+    h2{
+        font-size: 22px;
+    }
+
+/*------------------------------------------------------------*/
+/* Navigation / Hamb-Menu */
+/*------------------------------------------------------------*/
+
+/* Nav menu */
+    .nav{
+        overflow-y:hidden;
+        height:100%;
+    }
+
+/* Logo */
     .logo{
         display: inline-block;
         color: var(--white);
@@ -403,16 +426,9 @@ iframe{
         flex: 50%;
         max-width: 50%;
     }
-    .column img:hover{
-        transform: scale(1.2);
-    }
-
     .column-2 {
         flex: 50%;
         max-width: 50%;
-    }
-    .column-2 img:hover{
-        transform: scale(1.2);
     }
 }
 
@@ -426,6 +442,7 @@ iframe{
     body{
         margin:2% 10%;
     }
+
 /*------------------------------------------------------------*/
 /* Grid-Settings */
 /*------------------------------------------------------------*/
@@ -513,6 +530,9 @@ iframe{
       }
     .column img:hover{
         transform: scale(1.4);
+    }
+    .column-2 img:hover{
+        transform: scale(1.2);
     }
 }
 
